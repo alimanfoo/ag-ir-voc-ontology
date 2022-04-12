@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ag_voc"
 version = "0.0.0"
-description = "An ontology of variants of concern for the Anopheles gambiae complex."
+description = "Variants of concern for the Anopheles gambiae complex."
 authors = [
     "Alistair Miles <alistair.miles@sanger.ac.uk>",
     "Chris Clarkson <cc28@sanger.ac.uk>",
