@@ -14,14 +14,14 @@
   <rdfs:range rdf:resource="#Locus"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#haplotype_variant">
-  <rdfs:domain rdf:resource="#Haplotype"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</owl:ObjectProperty>
-
 <owl:DatatypeProperty rdf:about="#locus_region">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   <rdfs:domain rdf:resource="#Locus"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#haplotype_variant">
+  <rdfs:domain rdf:resource="#Haplotype"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
@@ -29,9 +29,9 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locus</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A genome region defined by a specified contig with start and stop
-            coordinates.
-        </rdfs:comment>
+A genome region defined by a specified contig with start and stop
+coordinates.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#LocusOfConcern">
@@ -39,29 +39,29 @@
   <owl:disjointWith rdf:resource="#LocusOfInterest"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locus of Concern</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A locus within which sequence variants are known to occur that
-            alter the mosquito phenotype in a way that could impact public
-            health and may require mitigating action.
-        </rdfs:comment>
+A locus within which sequence variants are known to occur that
+alter the mosquito phenotype in a way that could impact public
+health and may require mitigating action.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#LocusOfInterest">
   <rdfs:subClassOf rdf:resource="#Locus"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locus of Interest</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A locus within which sequence variants may occur that alter the
-            mosquito phenotype in a way that could impact public health, but
-            which requires further investigation.
-        </rdfs:comment>
+A locus within which sequence variants may occur that alter the
+mosquito phenotype in a way that could impact public health, but
+which requires further investigation.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Haplotype">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A DNA sequence spanning a locus and possibly carrying one or more
-            sequence variants.
-        </rdfs:comment>
+A DNA sequence spanning a locus and possibly carrying one or more
+sequence variants.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#HaplotypeOfConcern">
@@ -69,20 +69,20 @@
   <owl:disjointWith rdf:resource="#HaplotypeOfInterest"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype of Concern</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A haplotype which carries sequence variants that alter the mosquito
-            phenotype in a way that could impact public health and may require
-            mitigating action.
-        </rdfs:comment>
+A haplotype which carries sequence variants that alter the mosquito
+phenotype in a way that could impact public health and may require
+mitigating action.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#HaplotypeOfInterest">
   <rdfs:subClassOf rdf:resource="#Haplotype"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype of Interest</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            A haplotype which may carry sequence variants that alter the
-            mosquito phenotype in a way that could impact public health but
-            which requires further investigation.
-        </rdfs:comment>
+A haplotype which may carry sequence variants that alter the
+mosquito phenotype in a way that could impact public health but
+which requires further investigation.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#VgscHaplotype">
@@ -100,8 +100,8 @@
   </owl:equivalentClass>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vgsc Haplotype</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            Any haplotype spanning the Vgsc locus.
-        </rdfs:comment>
+Any haplotype spanning the Vgsc locus.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Vgsc_L995S">
@@ -119,9 +119,9 @@
   </owl:equivalentClass>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vgsc+L995S</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            Any haplotype spanning the Vgsc locus and carrying the L995S amino
-            acid substitution.
-        </rdfs:comment>
+Any haplotype spanning the Vgsc locus and carrying the L995S amino
+acid substitution.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Vgsc_L995F">
@@ -139,9 +139,9 @@
   </owl:equivalentClass>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vgsc+L995F</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            Any haplotype spanning the Vgsc locus and carrying the L995F amino
-            acid substitution.
-        </rdfs:comment>
+Any haplotype spanning the Vgsc locus and carrying the L995F amino
+acid substitution.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Vgsc_L995F_N1570Y">
@@ -163,9 +163,9 @@
   </owl:equivalentClass>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vgsc+L995F+N1570Y</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            Any haplotype spanning the Vgsc locus and carrying the L995F and
-            N1570Y amino acid substitutions.
-        </rdfs:comment>
+Any haplotype spanning the Vgsc locus and carrying the L995F and
+N1570Y amino acid substitutions.
+</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Vgsc_V402L_I1527T">
@@ -187,9 +187,9 @@
   </owl:equivalentClass>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vgsc+V402L+I1527T</rdfs:label>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-            Any haplotype spanning the Vgsc locus and carrying the V402L and
-            I1527T amino acid substitutions.
-        </rdfs:comment>
+Any haplotype spanning the Vgsc locus and carrying the V402L and
+I1527T amino acid substitutions.
+</rdfs:comment>
 </owl:Class>
 
 <LocusOfConcern rdf:about="#AGAP004707">

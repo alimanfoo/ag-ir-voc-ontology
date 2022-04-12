@@ -1,4 +1,4 @@
-from .abc import *
+from .abc import LocusOfConcern, ag_voc_ontology  # Locus,; LocusOfInterest,
 
 with ag_voc_ontology:
 
