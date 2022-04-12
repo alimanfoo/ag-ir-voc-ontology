@@ -76,7 +76,7 @@ with ag_voc_ontology:
 
     AllDisjoint([HaplotypeOfConcern, HaplotypeOfInterest])
 
-    class locus_region(DataProperty, FunctionalProperty):
+    class locus_coords(DataProperty, FunctionalProperty):
         domain = [Locus]
         range = [str]
 
