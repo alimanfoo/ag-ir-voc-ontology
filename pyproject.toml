@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ag_voc"
+version = "0.0.0"
+description = "An ontology of variants of concern for the Anopheles gambiae complex."
+authors = [
+    "Alistair Miles <alistair.miles@sanger.ac.uk>",
+    "Chris Clarkson <cc28@sanger.ac.uk>",
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+owlready2 = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pre-commit = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
